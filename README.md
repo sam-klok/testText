@@ -9,6 +9,9 @@ https://stackoverflow.com/questions/38545704/textarea-to-full-size/38545804
 2. creating basic event to modify text:
 https://therichpost.com/how-to-change-button-text-on-click-function-in-angular-12/
 
+3. My question about funky behaviour of this app
+https://stackoverflow.com/questions/70689569/angular-app-stops-changing-text-on-button-click-after-user-input
+
 ===================
 Generated: 
 

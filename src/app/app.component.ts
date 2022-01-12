@@ -11,11 +11,10 @@ export class AppComponent {
 `text line 1
 text line 2`;
 
-changeText1(){
-  this.txt1 += ' 1';
-}
-changeText2(){
-  this.txt1 += ' 2';
-}
-
+  changeText1(){
+    this.txt1 += ' 1';
+  }
+  changeText2(){
+    this.txt1 += ' 2';
+  }
 }
