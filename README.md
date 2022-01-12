@@ -1,3 +1,20 @@
+Playing with simple editing in the Angualar app of the text in the text area.
+
+
+Used info: 
+
+1. CSS modifications for textarea to have it full size:
+https://stackoverflow.com/questions/38545704/textarea-to-full-size/38545804
+
+2. creating basic event to modify text:
+https://therichpost.com/how-to-change-button-text-on-click-function-in-angular-12/
+
+===================
+Generated: 
+
+
+
+
 # TestText
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
