@@ -3,7 +3,9 @@
   <button id="button2" (click)="changeText2()">button 2</button>
 </div>
 <div>
+  <textarea id="txt1" [(ngModel)]="txt1"></textarea>
+
+  <!-- <textarea id="txt1" (change)="doTextareaValueChange($event)">{{txt1}}</textarea> -->
   <!-- <textarea id="txt1">{{txt1}}</textarea> -->
-  <!-- <textarea id="txt1" [(ngModel)]="txt1"></textarea> -->
-  <textarea id="txt1" [(txt1)]></textarea>
+
 </div>

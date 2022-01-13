@@ -12,6 +12,9 @@ https://therichpost.com/how-to-change-button-text-on-click-function-in-angular-1
 3. My question about funky behaviour of this app
 https://stackoverflow.com/questions/70689569/angular-app-stops-changing-text-on-button-click-after-user-input
 
+4. textarea two way binding in Angular is not that simple, use the change-function:
+https://stackoverflow.com/questions/37346820/ngmodel-for-textarea-not-working-in-angular-2
+
 ===================
 Generated: 
 
