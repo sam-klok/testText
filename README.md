@@ -15,6 +15,13 @@ https://stackoverflow.com/questions/70689569/angular-app-stops-changing-text-on-
 4. textarea two way binding in Angular is not that simple, use the change-function:
 https://stackoverflow.com/questions/37346820/ngmodel-for-textarea-not-working-in-angular-2
 
+5. Microsoft Edge redirects http://localhost to https://localhost
+Go to Edge browser and type following statement in address bar: 
+edge://net-internals/#hsts
+Scroll all the way down to the section below and enter “localhost”, then click “Delete”.
+
+https://stackoverflow.com/questions/63825407/microsoft-edge-redirects-http-localhost-to-https-localhost
+
 ===================
 Generated: 
 
