@@ -1,8 +1,14 @@
 body {
-    height: 100%;
-  }
+  height: 100%;
+}
   
-  textarea {
-    width: 100%;
-    height: 90vh;
-  }
+textarea {
+  width: 100%;
+  height: 90vh;
+  /* height: 40vh; */
+}
+
+button {
+  height: 4vh;
+}
+

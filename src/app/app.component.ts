@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ConvertLib } from './convertLib';
 
 @Component({
   selector: 'app-root',
@@ -6,40 +7,32 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  txtCommas = 
-`Lorem Ipsum is, simply, dummy text,,, of the ,,printing 
-and typesetting , , , industry. Lorem Ipsum, has been, the industry's standard dummy, 
-text, ever , since the 1500s, when an unknown ,,, printer ,
-,took a galley of type, and ,scrambled ,, it to make a type specimen book. `;
+  testTxtCommas = 
+`Lorem Ipsum is, simply; dummy text||,,, of the ,,printing
+and typesetting | ; , , , industry. Lorem Ipsum,; has ;;been, the industry's sta||ndard dummy,
+blah with space 
+text, eve;r , since the 1500s, when an unknown ,,, printer ,
+,took a galley| of ||type, and ,scrambled ,, it to make|  a type ||specimen book. `;
 
-  txt1 = this.txtCommas;
+  txt1 = this.testTxtCommas;
 
-  changeText1(){
-    this.txt1 += ' 1';
+  changeText(splitter:string){
+    let convertLib = new ConvertLib();
+    this.txt1 = convertLib.convertLinesToColumn(this.txt1, splitter);
   }
-  changeText2(){
-    this.txt1 += ' 2';
-  }
-  changeText3(){
-    let a = this.txt1.replace(/\r?\n|\r/,"").split(',');
 
-    // trim each element
-    a.forEach((v,i,arr)=>{
-      arr[i] = v.trim();
-    });
+  //txt0 = this.testTxtCommas;
+  
+  // testChangeText1(){
+  //   this.txt1 += ' 1';
+  // }
 
-    // remove empty elements
-    var b = a.filter((e)=>{
-      return e != null && e != "";
-    })
-    
-    this.txt1 = b.join('\n, ');
-  }  
+  // testChangeText2(){
+  //   this.txt1 += ' 2';
+  // }
 
-//title = 'testText';
-//
-//   txt1 = 
-// `text line 1
-// text line 2`;
+  // testTextRevert(){
+  //   this.txt1 = this.testTxtCommas;    
+  // }
 
 }

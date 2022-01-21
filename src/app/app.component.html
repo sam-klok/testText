@@ -1,12 +1,16 @@
 <div>
-  <button id="button1" (click)="changeText1()">button 1</button>
-  <button id="button2" (click)="changeText2()">button 2</button>
-  <button id="button3" (click)="changeText3()">button 3 ","</button>
+  <button id="buttonComma" (click)="changeText(',')">Convert ,</button>
+  <button id="buttonSemicolon" (click)="changeText(';')">Convert ;</button>
+  <button id="buttonPipe" (click)="changeText('|')">Convert |</button>
+  <button id="buttonDoublePipe" (click)="changeText('||')">Convert ||</button>
+
+  <!-- uncomment test buttons and test text area below for testing -->
+  <!-- <button id="testButton1" (click)="testChangeText1()">+ 1</button>
+  <button id="testButton2" (click)="testChangeText2()">+ 2</button>
+  <button id="testButtonRevert" (click)="testTextRevert()">Revert</button> -->
+
 </div>
 <div>
+  <!-- <textarea id="test0" style="height: 11vh;" >{{txt0}}</textarea> -->
   <textarea id="txt1" [(ngModel)]="txt1"></textarea>
-
-  <!-- <textarea id="txt1" (change)="doTextareaValueChange($event)">{{txt1}}</textarea> -->
-  <!-- <textarea id="txt1">{{txt1}}</textarea> -->
-
 </div>
